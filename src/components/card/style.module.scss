@@ -1,0 +1,55 @@
+.card {
+    padding: 35px 0px 35px 40px;
+    width: 328px;
+    box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+
+    & p {
+        margin: 20px 0px 20px 0px;
+        font-weight: 700;
+        color: #252B42;
+        height: 43px;
+        font-size: 16px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            bottom: 0;
+            content: "";
+            display: inline-block;
+            width: 50px;
+            height: 2px;
+            background: #E74040;
+        }
+    }
+
+    & span {
+        font-size: 14px;
+        color: #737373;
+    }
+}
+
+
+@media screen and (max-width: 1040px) {
+    .card {
+        width: 292px;
+    }
+}
+
+@media screen and (max-width: 938px) {
+    .card {
+        width: 265px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .card {
+        width: 247px;
+    }
+}
+
+@media screen and (max-width: 793px) {
+    .card {
+        width: 328px;
+        margin-bottom: 30px;
+    }
+}
